@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registro de Equipamentos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">Registro de Equipamentos</div>
+    <div class="button-bar">
+      <button class="button" onclick="window.location.href='index3.html'">Histórico</button>
+      <button class="button" onclick="window.location.href='Index1.html'">Sair</button>
+    </div>
+    <form class="form" id="equipamentoForm">
+      <div class="form-group"><label for="cnpj">CNPJ</label><input type="text" id="cnpj" /></div>
+      <div class="form-group"><label for="inicio">Data de Início</label><input type="date" id="inicio" /></div>
+      <div class="form-group"><label for="termino">Data de Término</label><input type="date" id="termino" /></div>
+      <div class="form-group"><label for="defeito">Defeito</label><input type="text" id="defeito" /></div>
+      <div class="form-group"><label for="equipamento">Equipamento</label><input type="text" id="equipamento" /></div>
+      <div class="form-group"><label for="filial">Filial</label><input type="text" id="filial" /></div>
+      <div class="form-group"><label for="numero_de_serie">Número de Série</label><input type="text" id="equipamento /></div>
+      <div class="form-group"><label for="responsavel">Responsável</label><input type="text" id="tecnico" /></div>
+      <div class="form-group"><label for="tecnico">Técnico</label><input type="text" id="tecnico" /></div>
+      <button type="submit" class="submit-button">Salvar Registro</button>
+    </form>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="script.js"></script>
+</body>
+</html>
